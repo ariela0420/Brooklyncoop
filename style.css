@@ -1,0 +1,490 @@
+body {
+    margin: 0;
+
+}
+
+.header-container {
+    background-image: url(../images/Family\ Outside.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* nav settings */
+.top-nav {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .top-nav {
+        align-items: center;
+        display: flex;
+        justify-content: end;
+        z-index: 2;
+        position: relative;
+        list-style: none;
+        background-color: rgba(0, 0, 0, 0.1);
+        width: 100%;
+        padding-right: 90px;
+    }
+}
+
+.top-nav-container li {
+    color: white;
+    font-size: 13px;
+    padding: 15px;
+}
+
+.logo {
+
+    width: 200px;
+    height: 70px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 0 0 0 9px;
+    background-color: white;
+}
+
+
+.left-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    display: flex;
+    z-index: 900;
+    margin-right: 40px;
+}
+
+
+.left-nav li {
+    position: relative;
+    cursor: pointer;
+    border-right: 1px solid white;
+    padding: 9px 10px 0 0;
+    line-height: 0.6;
+
+}
+
+.left-nav a:last-child::after {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .hamburger-menu {
+        display: none;
+
+    }
+
+    .left-nav {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 30px;
+    }
+
+    .nav-container {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+
+ul {
+    list-style: none;
+}
+
+.nav-container li {
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+
+.login a {
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+}
+
+/* welcome container */
+
+.welcome-container {
+    position: relative;
+    color: white;
+    z-index: 2;
+}
+
+.welcome-quote {
+    background-color: rgba(143, 141, 141, 0.753);
+    position: absolute;
+    left: 80px;
+    top: 80px;
+    font-size: 29px;
+    width: 400px;
+    height: 380px;
+    border-radius: 9px;
+    box-shadow: 10px 10px 20px rgba(145, 143, 143, 0.8);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.welcome-quote a {
+    text-decoration: none;
+    color: rgb(34, 34, 185);
+}
+
+/* main section */
+.main-container {
+    display: block;
+    padding-top: 30px;
+    background-color: rgb(228, 228, 228);
+}
+
+@media (min-width: 768px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+        width: 100%;
+    }
+}
+
+.column-title {
+    font-size: 38px;
+}
+
+.y-column {
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+.column-content {
+    padding-top: 40px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 35px;
+}
+
+.buttons a {
+    color: white;
+}
+
+.buttons p {
+    font-size: 20px;
+    background-color: green;
+    width: 140px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 800;
+    transition: background-color 0.3s;
+
+}
+
+.buttons P:hover {
+    color: rgb(218, 242, 218);
+
+}
+
+
+/* drop down menu  */
+
+.menu-item-list a {
+    color: white;
+
+}
+
+.menu-item-list li {
+    padding: 15px 0 5px 0;
+    border-bottom: 1px solid white;
+    margin-right: 30px;
+
+}
+
+.menu-item-list ul {
+    list-style: none;
+
+}
+
+
+.dropdown-menu1 {
+    display: none;
+    position: absolute;
+    top: 110px;
+    left: 430px;
+    background-color: rgb(23, 106, 44);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 20;
+    width: 235px;
+}
+
+.dropdown-menu2 {
+    display: none;
+    position: absolute;
+    top: 110px;
+    left: 590px;
+    background-color: rgb(23, 106, 44);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 20;
+    width: 235px;
+}
+
+.dropdown-menu3 {
+    display: none;
+    position: absolute;
+    top: 110px;
+    left: 690px;
+    background-color: rgb(23, 106, 44);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 20;
+    width: 235px;
+}
+
+.dropdown-menu4 {
+    display: none;
+    position: absolute;
+    top: 110px;
+    left: 860px;
+    background-color: rgb(23, 106, 44);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 20;
+    width: 235px;
+}
+
+/* Side Menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #b2b2b2;
+    color: rgb(9, 9, 9);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu .close-btn {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: rgb(11, 11, 11);
+    font-size: 30px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.side-menu .menu-items {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.side-menu .menu-items li {
+    margin: 20px 0;
+}
+
+.side-menu .menu-items a {
+    color: rgb(13, 13, 13);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.side-menu .menu-items a:hover {
+    text-decoration: underline;
+}
+
+/* Blog section  */
+
+.section-title {
+    font-size: 65px;
+    font-weight: bolder;
+    margin-top: 40px;
+    margin-bottom: -24px;
+    height: 100px;
+    color: rgb(12, 11, 11);
+    /* background-color: rgb(218, 216, 216); */
+
+}
+
+.blog-container {
+    display: block;
+    background-color: rgb(228, 228, 228);
+}
+
+
+@media (min-width: 768px) {
+    .blog-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        width: 100%;
+    }
+}
+
+.blog-image img {
+    width: 300px;
+    padding: 0 0 50px 28px
+}
+
+.blog-grid-item {
+    width: 400px;
+    margin-left: 110px;
+}
+
+@media (min-width: 768px) {
+    .blog-grid-item {
+        margin-left: 0;
+    }
+}
+
+.blog-one,
+.blog-two,
+.blog-three {
+    padding-top: 30px;
+    margin: 30px;
+    border: 3px solid white;
+    border-radius: 7px;
+}
+
+.blog-btn {
+    text-align: center;
+    font-size: 27px;
+    font-weight: 700;
+    display: flex;
+    justify-content: end;
+
+}
+
+.blog-btn-content a {
+    color: rgb(6, 6, 6);
+
+}
+
+.author {
+    font-size: 19px;
+}
+
+/* mission section */
+.title-content {
+    font-size: 65px;
+    font-weight: bolder;
+    margin-top: 40px;
+    margin-bottom: -24px;
+    height: 100px;
+    color: rgb(12, 11, 11);
+}
+
+.mission-content {
+    display: block;
+    background-color: rgb(228, 228, 228);
+    font-size: 40px;
+    font-weight: 600;
+    padding: 40px;
+}
+
+/* footer section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #00bcd4;
+}
+
+.subscribe-section {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe-section input[type="email"] {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.subscribe-section button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: #21a345;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-section button:hover {
+    background-color: #0199a6;
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .subscribe-section {
+        width: 100%;
+        display: block;
+    }
+
+    .subscribe-section input[type="email"] {
+        flex: 1;
+    }
+}
